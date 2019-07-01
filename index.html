@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Smart Solution Groub</title>
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="imges/smartCube.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" >
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <script src="wow.min.js"></script>
+   <link rel="stylesheet" href="animated.css">
+   <script>
+            new WOW().init();
+            $(document).ready(function(){
+             $(".middle").hover(function(){
+                   $("#port_img").css("opacity",".3");  
+             });
+
+             $('body').scrollspy({target: ".navbar", offset:100});  
+                  $(window).scroll(function() {
+                  var scrollPos = $(window).scrollTop(),
+                      navbar = $('.navbar');
+          
+                  if (scrollPos > 300) {
+                  navbar.addClass('alt-color');
+                  } else {
+                  navbar.removeClass('alt-color');
+                  }
+              }); 
+
+            });
+
+                </script>
+                   <script>
+                    $('#recipeCarousel').carousel({
+                    interval: 1500
+                    })
+                
+                    $('.carousel .carousel-item').each(function(){
+                    var next = $(this).next();
+                    if (!next.length) {
+                    next = $(this).siblings(':first');
+                    }
+                    next.children(':first-child').clone().appendTo($(this));
+                
+                    if (next.next().length>0) {
+                    next.next().children(':first-child').clone().appendTo($(this));
+                    }
+                    else {
+                    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+                    }
+                    });
+                    </script>
+                 
+
+</head>
+<body  data-spy="scroll" data-target=".navbar" data-offset="72">
+        <!--nav bar-->
+        <nav class="navbar navbar-expand-lg  fixed-top navbar-dark  " style="background-color: #111e33" >  
+                <a class="navbar-brand" href="#" ></a>
+                <img src="imges/logo1.png" class="p-4" id="logo">
+                </a> 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>  
+                <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto pr-4 nav-menu sf-js-enabled sf-arrows "  touch-action: pan-y;>
+                        <li class="nav-item ">
+                          <a class="nav-link" href="#header">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#portfolio">Portifolio</a>
+                        </li>
+                        <li class="nav-item">
+                              <a class="nav-link" href="#client">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#contact">contact</a>
+                        </li>
+                        <li class="nav-item">
+                              <a class="nav-link" href="#">عربى</a>
+                       </li>
+                      </ul>
+                </div>
+                
+               
+              </nav>
+          <!--heeder-->
+             <header class="mathhead" id="header">
+                        <div class="container align-items-center">
+                             <div class="mx-auto text-center">    
+                              <h1 id="prof">We are Profetional</h1>
+                              <h5 style="color:white;">Welcome to our Company</h5>
+                             </div>
+                          </div>
+                      </header>
+<!--about us -->
+          <section class="text-center" id="about">
+               <div class="container" >
+                     <div class="row">
+                        <div class="col-lg-12 mx-auto">
+                                <div style="height: 300px;" >
+                                         <h1 class="pt-5">About US</h1>  
+                                <p> 
+                 We believe that we can change culture and make the world a better place. The objective is attained by producing quality products through which    values are conveyed 
+                                                and that will infleunce the society
+                                        </p><br>
+                                <p>
+ Smart Solutions Group provide profeesional IT services. Our main branch in KSA -Jeddah and our development house in Egypt ,cairo Nozha.
+                                         </p>
+                                <p>
+        We have many partnerships with many Companies and Organization outside KSA and Egypt
+                                          </p>
+                                  </div>
+                                </div>
+                </div>
+        </div>
+        <div class="container">
+                        <div class="row">
+
+                          <div class="col-lg-4" >
+                                      <!--animate--> <div class="card wow fadeInUp" data-wow-delay="0.5s" style="margin-bottom:50px">
+                                               <div class="card-body shadow" >
+                                                <img src="imges/1.jpg" class="col-12"><br><br>
+                                                <a href="#" style="color:black"><h5>Slution & Time</h5></a>
+                                                <p class="prag">
+                                                          Providing unique solutions that make it easy to deliver your project idea to the user while 
+                                                         
+                                                          maintaining the speed of execution and maintaining  time.
+                                                         
+                                                                  
+                                                </p>
+                                               </div>
+                                          </div>
+
+                                          </div>
+                                           <div class="col-lg-4">
+                                                          <div class="card wow fadeInUp" data-wow-delay="0.5s" style="margin-bottom:50px">
+                                                                          <div class="card-body shadow" >
+                                                                           <img src="imges/2.jpg" class="col-12">
+                                                                           <a href="#" style="color:black;"><h5>Protection and Privacy</h5></a>
+                                                                           <p class="prag">
+                                                                                          Protecting all of your customer projects without compromising any of them can say that protecting and maintaining
+                                                                                           the privacy of our customers is our primary concern.
+                                                                                    
+                                                                                             
+                                                                           </p>
+                                                                          </div>
+                                                                     </div>                                                           
+
+                                                          </div>
+                                          <div class="col-lg-4 " >
+                                                          <div class="card wow fadeInUp" data-wow-delay="0.5s" style="margin-bottom:50px">
+                                                                          <div class="card-body shadow" >
+                                                                           <img src="imges/3.jpg" class="col-12"><br><br><br>
+                                                                           <a href="#" style="color:black"><h5>Checking finished projects</h5></a>
+                                                                           <p class="prag">
+                                                                                          Check the finished projects and follow up the clients' work always to ensure that they work well without any
+                                                                                           problems and provide tips via  or delivery provide 
+                                                                                             
+                                                                           </p>
+                                                                          </div>
+                                                                     </div>                                                           
+
+                                                                  </div>
+                          </div>
+                         
+                     
+                   </div>
+
+</section>
+     
+       <!--social media-->
+        <div class="d-flex flex-column">
+           <div class="social-media">  
+                <div class="p-2 mt-1 bg-light"><a href="#"><i class="fab fa-twitter pl-2"></i></a></div>
+                <div class="p-2 mt-1 bg-light"><a href="#"> <i class="fab fa-facebook-f pl-2"></i></a></div>
+                <div class="p-2 mt-1 bg-light"><a href="#"> <i class="fab fa-instagram pl-2"></i></a></div>
+                <div class="p-2 mt-1 bg-light"><a href="#"> <i class="fab fa-google-plus-g pl-2"></i></a></div>
+                <div class="p-2 mt-1 bg-light"><a href="#"><i class="fab fa-linkedin-in pl-2"></i></a></div>
+        
+                        </div>
+         </div>
+       <!--services-->  
+       <section class="text-center" id="services">
+                <div class="container">
+                      <div class="row">
+                         <div class="col-lg-12 mx-auto wow fadeInUp" data-wow-delay="0.6s">
+                                 <div style="height: 150px;margin-top: 20px;font-family: myfont;margin-bottom: 20px;">
+                                   <h3 class="pt-5"><b>Services</b></h3>  
+                                 <p> 
+                                 Our company provides many services to you.
+                                         </p> 
+                                                     
+                         </div> 
+                </div>  
+                     </div> 
+                     <div class="row">
+                                <div class="col-lg-4 col-md-6  wow fadeInUp" data-wow-delay="0.7s" style="height: 300px;">
+                                                <a href="#" class="ser_a"> <img src="imges/software.png" class="ser_img" >
+                                                        <h2 class="ser_lab">Software and automation systems </h2></a><br>
+                                                        <br>
+                                                        <p class="ser_p">
+                                                                        we create digital solutions for international <br>corporations, small businesses and other  <br>organisations with an aim to open up new <br>
+                                                                        possibilities for expansion, process  <br> automatisation, and continuous improvement. <br>We are a team of experienced developers,<br> creators, designers and project managers you 
+                                                                        <br>can rely on.
+                                                                       
+                                                                </p>
+                                
+                                        </div>
+                                        
+                               <div class="col-lg-4  col-md-6  wow fadeInUp" data-wow-delay="0.7s" style="height: 300px;">
+                                 <a href="#" class="ser_a"> <img src="imges/coding.png" class="ser_img" >
+                                     <h3 class="ser_lab"> Web design and development</h3></a><br>
+                                     <br>
+                                     <p class="ser_p">
+                                                We provide expert web application development <br>and web design services to our clients. Our <br>
+                                                experts are trained, certified and experienced <br>across a variety of website platforms.
+                                             </p>
+                                     
+
+                                        </div>   
+                                <div class="col-lg-4  col-md-6  wow fadeInUp" data-wow-delay="0.7s" style="height: 300px;">
+                                                <a href="#" class="ser_a"> <img src="imges/smartphone.png" class="ser_img" >
+                                                        <h3 class="ser_lab"> Mobile applications development</h3></a><br>
+                                                        <br>
+                                                        <p class="ser_p">
+                                                                        Design and develop advanced, feature rich <br>Android and IOS mobile applications that meet  <br>your unique business requirements. We work <br>
+                                                                        across the application lifecycle utilizing agile  <br>development processes to ensure customers get <br>
+                                                                        intuitive, robust applications delivered to agreed <br>timescales.
+                                                                </p>
+                                                        
+                                        
+
+                                                </div>      
+                        </div>
+                        <div class="row">
+                                <div class="col-2 " style="height: 300px;">
+                                                </div>
+                                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.7s" style="height: 300px;">
+                                                <a href="#" class="ser_a"> <img src="imges/network.png" class="ser_img" >
+                                                        <h3 class="ser_lab">Digital and social media marketing</h3></a><br>
+                                                       <br>
+                                                        <p class="ser_p">
+                                                          We use various online platforms (Facebook,<br> Instagram, Twitter, LinkedIn, Google Adwords &  <br> etc)to market and raise awareness for your<br>
+                                                          project Put simply, we make sure you are in the <br>right place at the right time.
+                                                                        
+                                                                </p>          
+
+                                        </div>
+                                 <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.7s" style="height: 300px;">
+                                                <a href="#" class="ser_a"> <img src="imges/consulting.png" class="ser_img" >
+                                                        <h3 class="ser_lab">Consultation and on-site training </h3></a><br>
+                                                        <br>
+                                                        <p class="ser_p">
+                                                                        We provide strategic consulting for decision <br>support, organisational improvement and <br>operative execution. We advise top management <br>in areas of project management and 
+                                                                        procurement.Effective development and <br>execution of large and complex capital <br>
+                                                                        investments requires a broad understanding of <br>the political, technical, ...
+                                                                </p>      
+                                                       
+                                                        
+
+                                        </div>
+                                <div class="col-lg-2 " style="height: 300px;">
+                                                </div>      
+                                </div>  
+                     
+                   </div>            
+        </section>   
+        
+     <!--portofolio-->   
+
+     <section class="text-center" id="portfolio">
+                <div class="container-fluid" style="background-color: #111e33;height: auto">
+                     <div class="container">
+                             <div class="row">
+                                     <div class="col-lg-12 mx-auto">
+                                             <h3 style="color:white;font-family: myfont;margin-top: 60px"><b>Our Portfolio</b></h3>
+                                             </div>
+                                     </div>
+                            <div class="row">
+                                 <div class="col-lg-12 mx-auto">
+                                         <ul id="port_ul">
+                                                 <li><a href="#">ALL</a></li>
+                                                 <li><a href="#">WEB</a></li>
+                                                 <li><a href="#">MOBILE</a></li>
+                                                 </ul>
+                                  </div>
+                                 </div>   
+                            <div class="row">
+                                        <div class="col-lg-4 col-md-12 wow fadeInUp" id="Portifolio1" data-wow-delay="0.3s" style="height: auto;">
+                           
+                                                 <img src="imges/TAKHFEEDMain.jpg" class="col-12 mx-auto pt-2 container-fluid" id="port_img">
+                                                 <button class="middle">
+                                                                <i class="fas fa-eye" id="text"></i>
+                                                    </button>
+                                                
+                                                
+                                                 <div class="col-11 mx-auto" id="port_div">
+                                                     <h6 style="font-family: myfont;font-size: 13px"><a href="#" id="port_a">TAKHFEED website</a></h6>  
+                                              
+                                                 </div>
+                                                                         
+                                                                       
+                                                           
+                                                </div>
+                                        <div class="col-lg-4 col-md-12 mx-auto wow fadeInUp" id="Portifolio1" data-wow-delay="0.3s" style="height:auto;">
+       
+                                                                        <img src="imges/Capture.PNG" class="col-lg-12 mx-auto pt-2" id="port_img">
+                                                                        <button class="middle">
+                                                                                <i class="fas fa-eye" id="text"></i>
+                                                                            </button>
+                                                                        <div class="col-lg-11 mx-auto" id="port_div">
+                                                                            <h6 style="font-family: myfont;font-size: 13px"><a href="#" id="port_a">Mera Laundry App for cleaning clothes and furnishings</a></h6>  
+                                                                        </div>
+                                                                </div>
+                                         <div class="col-lg-4 col-md-12 mx-auto wow fadeInUp" id="Portifolio1" data-wow-delay="0.3s" style="height: auto;">
+                                                        <img src="imges/moadiiIOSMain.jpg" class="col-lg-12 mx-auto pt-2" id="port_img">
+                                                        <button class="middle">
+                                                         <i class="fas fa-eye" id="text"></i>
+                                                            </button>
+                                                        <div class="col-lg-11 mx-auto" id="port_div">
+                                                            <h6 style="font-family: myfont;font-size: 13px"><a href="#" id="port_a">Moadii service for medical appointments in KSA</a></h6>  
+                                                        </div>
+                                                                </div>
+
+                                 </div>  
+                                 
+                                 <div class="row">
+                                        <div class="col-lg-4 col-md-12 wow fadeInUp" id="Portifolio1" data-wow-delay="0.5s" style="height: auto;">
+                           
+                                                 <img src="imges/moadiiIOSMain.jpg" class="col-12 mx-auto pt-3 container-fluid" id="port_img">
+                                                 <button class="middle">
+                                                                <i class="fas fa-eye" id="text"></i>
+                                                    </button>
+                                                
+                                                
+                                                 <div class="col-11 mx-auto" id="port_div">
+                                                     <h6 style="font-family: myfont;font-size: 13px"><a href="#" id="port_a">Moadii Android application for smart phones</a></h6>  
+                                              
+                                                 </div>
+                                                                         
+                                                                       
+                                                           
+                                                </div>
+                                        <div class="col-lg-4 col-md-12 mx-auto wow fadeInUp" id="Portifolio1" data-wow-delay="0.5s" style="height:auto;">
+       
+                                                                        <img src="imges/KEYRPTOMain.jpg" class="col-lg-12 mx-auto pt-3" id="port_img">
+                                                                        <button class="middle">
+                                                                                        <i class="fas fa-eye" id="text"></i>
+                                                                            </button>
+                                                                        <div class="col-lg-11 mx-auto" id="port_div">
+                                                                            <h6 style="font-family: myfont;font-size: 13px"><a href="#" id="port_a">KEYREPTO website</a></h6>  
+                                                                        </div>
+                                                                </div>
+                                         <div class="col-lg-4 col-md-12 mx-auto wow fadeInUp" id="Portifolio1" data-wow-delay="0.5s" style="height: auto;">
+                                                        <img src="imges/owlsMain.jpg" class="col-lg-12 mx-auto pt-3" id="port_img">
+                                                        <button class="middle">
+                                                                        <i class="fas fa-eye" id="text"></i>
+                                                            </button>
+                                                        <div class="col-lg-11 mx-auto" id="port_div">
+                                                            <h6 style="font-family: myfont;font-size: 13px"><a href="#" id="port_a">Owls social app</a></h6>  
+                                                        </div>
+                                                                </div>
+
+                                     </div>         
+                             
+                                 
+
+                                 
+                                 
+
+                                 <div class="row">
+                                        <div class="col-lg-4 col-md-12 wow fadeInUp" id="Portifolio1" data-wow-delay="0.7s" style="height: auto;">
+                           
+                                                 <img src="imges/OwlsWebMain.jpg" class="col-12 mx-auto pt-3 container-fluid" id="port_img">
+                                                 <button class="middle">
+                                                                <i class="fas fa-eye" id="text"></i>
+                                                    </button>
+                                                
+                                                
+                                                 <div class="col-11 mx-auto" id="port_div">
+                                                     <h6 style="font-family: myfont;font-size: 13px"><a href="#" id="port_a">Owls social website for over thinking in Egypt</a></h6>  
+                                              
+                                                 </div>
+                                                                         
+                                                                       
+                                                           
+                                                </div>
+                                        <div class="col-lg-4 col-md-12 mx-auto wow fadeInUp" id="Portifolio1" data-wow-delay="0.7s" style="height:auto;">
+       
+                                                                        <img src="imges/RoshettaMain.jpg" class="col-lg-12 mx-auto pt-3" id="port_img">
+                                                                        <button class="middle">
+                                                                                        <i class="fas fa-eye" id="text"></i>
+                                                                            </button>
+                                                                        <div class="col-lg-11 mx-auto" id="port_div">
+                                                                            <h6 style="font-family: myfont;font-size: 13px"><a href="#" id="port_a">Roshettah application</a></h6>  
+                                                                        </div>
+                                                                </div>
+                                         <div class="col-lg-4 col-md-12 mx-auto wow fadeInUp" id="Portifolio1" data-wow-delay="0.7s" style="height: auto;">
+                                                        <img src="imges/albabtien.jpg" class="col-lg-12 mx-auto pt-3" id="port_img">
+                                                        <button class="middle">
+                                                                        <i class="fas fa-eye" id="text"></i>
+                                                            </button>
+                                                        <div class="col-lg-11 mx-auto" id="port_div">
+                                                            <h6 style="font-family: myfont;font-size: 13px"><a href="#" id="port_a">Al-babtain contracting company</a></h6>  
+                                                        </div>
+                                                                </div>
+
+                                     </div>   
+                                     
+                                     <div class="row">
+                                                <div class="col-lg-4 col-md-12 wow fadeInUp" id="Portifolio1" data-wow-delay="0.9s" style="height: auto;">
+                                   
+                                                         <img src="imges/company.jpg" class="col-12 mx-auto pt-3 container-fluid" id="port_img">
+                                                         <button class="middle">
+                                                                        <i class="fas fa-eye" id="text"></i>
+                                                            </button>
+                                                        
+                                                        
+                                                         <div class="col-11 mx-auto" id="port_div">
+                                                             <h6 style="font-family: myfont;font-size: 13px"><a href="#" id="port_a">Faculty of science, Azhar university, Assiut</a></h6>  
+                                                      
+                                                         </div>
+                                                                                 
+                                                                               
+                                                                   
+                                                        </div>
+                                                <div class="col-lg-4 col-md-12 mx-auto wow fadeInUp" id="Portifolio1" data-wow-delay="0.9s" style="height:auto;">
+               
+                                                                                <img src="imges/azhar.jpg" class="col-lg-12 mx-auto pt-3" id="port_img">
+                                                                                <button class="middle">
+                                                                                                <i class="fas fa-eye" id="text"></i>
+                                                                                    </button>
+                                                                                <div class="col-lg-11 mx-auto" id="port_div">
+                                                                                    <h6 style="font-family: myfont;font-size: 13px"><a href="#" id="port_a">NHBAS international conference organized by Azhar University</a></h6>  
+                                                                                </div>
+                                                                        </div>
+                                                 <div class="col-lg-4 col-md-12 mx-auto wow fadeInUp" id="Portifolio1" data-wow-delay="0.9s" style="height: auto;">
+                                                                <img src="imges/governate.jpg" class="col-lg-12 mx-auto pt-3" id="port_img">
+                                                                <button class="middle">
+                                                                                <i class="fas fa-eye" id="text"></i>
+                                                                    </button>
+                                                                <div class="col-lg-11 mx-auto" id="port_div">
+                                                                    <h6 style="font-family: myfont;font-size: 13px"><a href="#" id="port_a">Harvey laboratory website in Canada</a></h6>  
+                                                                </div>
+                                                                        </div>
+        
+                                             </div>   
+
+                             
+                             
+                             </div>
+
+               </div>
+         </section>               
+    <!---clients-->  
+    <section class="container-fluid" id="client" style="background-image: url('imges/partner.jpg');background-repeat: no-repeat;background-size: cover;width: 100%;height:300px ">
+      
+        <div class="container text-center ">
+               
+                <div class="row mx-auto my-auto ">
+                    <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                        <div class="carousel-inner mt-5" role="listbox">
+                            <div class="carousel-item active">
+                                <img class=" col-4 " src="imges/client-3.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class=" col-4 " src="imges/client-4.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="col-4 " src="imges/client-5.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class=" col-4 " src="imges/client-6.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class=" col-4 " src="imges/client-7.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class=" col-4 " src="imges/client-8.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class=" col-4 " src="imges/client-9.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class=" col-4 " src="imges/client-10.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class=" col-4 " src="imges/client-11.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="col-4 " src="imges/client-12.png">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+           
+      </section>  
+    
+
+    <!--contact-->  
+    <section  id="contact">
+        <div class="container-fluid">
+                <div class="row">
+                        <div class="col-lg-6 col-md-12 wow fadeInRight" id="Portifolio1" data-wow-delay="0.9s" style="height: 630px;">
+                                        <h2 style="font-family: myfont;padding-top: 50px;font-size: 32px;text-align: center;color: black"><b>Contact Us</b></h2>
+                                        <p class="pt-2" style="text-align: center">keep in touch</p>
+                                        <div class="col-12 ml-5">
+                                                        <span>
+                                                          <label id="contact_logo"><i class="fa fa-phone " ></i></label> 
+                                                           <label id="contact"> Phone Number</label> 
+                                                        </span>
+                                                        <label id="contact1" class="col-12"> Land Line :<span style="color:#74c0df">+202–24178434 </span></label>
+                                                        <label id="contact1" class="col-12"> Cell Phone :<span style="color:#74c0df">+2-01030868082</span> </label>
+                                                        <br>
+                                                        <label id="contact_logo"><i class="fa fa-envelope" ></i></label> 
+                                                        <label id="contact"> Email</label> 
+                                                        <label id="contact1" class="col-12 "> <a href="#" id="links">info@smartslngroup.com</a> </label>
+                                                        <br>
+                                                        <label id="contact_logo"><i class="fa fa-map-marker" ></i></label> 
+                                                        <label id="contact">  Address</label> 
+                                                        <label id="contact1" class="col-12 ">KSA :<span style="color:#666666;font-size: 14px">El-Zahraa District, Jeddah.</span></label>
+                                                        <label id="contact1" class="col-12 ">Egypt  : <span style="color:#666666;font-size: 14px">9,Elnozha st, Cairo.</span></label>
+                                                        <br>
+                                                        <label id="contact_logo"><i class="fa fa-user"></i></label> 
+                                                        <label id="contact">  Partners</label> <br>
+                                                        <label id="contact1" ><img src="imges/smartCube.png" class="rounded-circle" id="con_img"> Cube Solution : <span style="color:#666666;font-size: 14px"> Asyut, Egypt.</span></label>
+                                                        <label id="contact1" ><img src="imges/moadii.png" class="rounded-circle "id="con_img">Moadii Technologies  : <span style="color:#666666;font-size: 14px">Jeddah, KSA.</span></label>
+                                                       
+                                                </div>
+                                             
+                                                
+                                </div>
+                        <div class="col-lg-6 col-md-12 wow fadeInUp " id="Portifolio1" data-wow-delay="0.1s" style="height: 630px;" >
+                                        <h2 style="font-family: myfont;padding-top: 50px;font-size: 32px;text-align: center;color: black"><b>Location</b></h2>
+                                        <p class="pt-2" style="text-align: center">keep in touch</p>
+                                       
+                                        <iframe style="width:100%;height:450px" allowfullscreen="" class="resp-iframe" frameborder="0"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.5007860523824!2d31.342618684884034!3d30.079840981869523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583e1af2d120ef%3A0xd96e4358127745f1!2z2LPZhdin2LHYqiDYs9mI2YTZitmI2LTZhtiyINis2LHZiNioINmE2YTYqNix2YXYrNmK2KfYqg!5e0!3m2!1sar!2seg!4v1531128379857">
+                    
+                                        </iframe> 
+                                      
+                            </div>       
+
+
+                </div>
+        </div>
+</section>
+
+<!--footer-->
+<footer class="footer">
+   <label style="font-family: myfont;color: white;padding-top: 30px">copyright 2018 <b> Smart Solution</b> All Right Rserved</label>
+        </footer>
+        <a _ngcontent-c7="" class="back-to-top" href="#"><i _ngcontent-c7="" class="fa fa-chevron-up pt-3"></i></a>
+     
+
+</body>
+</html>
